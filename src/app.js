@@ -11,5 +11,6 @@ app.use(cookieParser());
 // 2. Routes
 app.use("/", require("./routes/root"));
 app.use("/products", require("./routes/productRoutes"));
+app.use("/orders", require("./routes/orderRoutes"));
 // 3. Exporting the app instance
 module.exports = app;
