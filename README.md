@@ -12,12 +12,12 @@ Glimmy Baby Cots & Furniture is a furniture manufacturing and retail business sp
 
 This backend system was developed to replace manual business processes and provide a scalable foundation for:
 
-* Product management
-* Order tracking
-* Inventory management
-* Customer sales tracking
-* Business analytics
-* Secure administrator access
+- Product management
+- Order tracking
+- Inventory management
+- Customer sales tracking
+- Business analytics
+- Secure administrator access
 
 ---
 
@@ -25,64 +25,64 @@ This backend system was developed to replace manual business processes and provi
 
 ### Authentication & Authorization
 
-* JWT Authentication
-* Access Token & Refresh Token implementation
-* Secure password hashing using bcrypt
-* Role-Based Authorization
-* Protected administrator routes
+- JWT Authentication
+- Access Token & Refresh Token implementation
+- Secure password hashing using bcrypt
+- Role-Based Authorization
+- Protected administrator routes
 
 ### Product Management
 
-* Create products
-* Retrieve products
-* Update products
-* Archive products (soft delete)
-* Restore archived products
-* Low stock monitoring
-* Stock increase and reduction
+- Create products
+- Retrieve products
+- Update products
+- Archive products (soft delete)
+- Restore archived products
+- Low stock monitoring
+- Stock increase and reduction
 
 ### Cloudinary Image Management
 
-* Upload product images
-* Store Cloudinary URLs and Public IDs
-* Delete product images
-* Prevent deletion of the final product image
+- Upload product images
+- Store Cloudinary URLs and Public IDs
+- Delete product images
+- Prevent deletion of the final product image
 
 ### Order Management
 
-* Create customer orders
-* Track order status
-* Update order status
-* Cancel orders
-* Inventory restoration on cancellation
+- Create customer orders
+- Track order status
+- Update order status
+- Cancel orders
+- Inventory restoration on cancellation
 
 ### Inventory Management
 
-* Stock tracking
-* Low stock detection
-* Atomic stock updates
-* Inventory-safe order workflows
+- Stock tracking
+- Low stock detection
+- Atomic stock updates
+- Inventory-safe order workflows
 
 ### Sales Management
 
-* Automatic sales record creation
-* Revenue tracking
-* Customer purchase history
-* Product sales analysis
+- Automatic sales record creation
+- Revenue tracking
+- Customer purchase history
+- Product sales analysis
 
 ### Analytics
 
-* Revenue analytics
-* Top-selling products
-* Sales breakdown reports
-* Customer history reports
-* Dashboard summaries
+- Revenue analytics
+- Top-selling products
+- Sales breakdown reports
+- Customer history reports
+- Dashboard summaries
 
 ### Development Utilities
 
-* Database seed scripts
-* Sample data generation
-* API documentation
+- Database seed scripts
+- Sample data generation
+- API documentation
 
 ---
 
@@ -90,31 +90,31 @@ This backend system was developed to replace manual business processes and provi
 
 ### Backend
 
-* Node.js
-* Express.js
+- Node.js
+- Express.js
 
 ### Database
 
-* MongoDB Atlas
-* Mongoose ODM
+- MongoDB Atlas
+- Mongoose ODM
 
 ### Authentication
 
-* JSON Web Tokens (JWT)
-* bcrypt
+- JSON Web Tokens (JWT)
+- bcrypt
 
 ### File Storage
 
-* Cloudinary
-* Multer
-* Multer Storage Cloudinary
+- Cloudinary
+- Multer
+- Multer Storage Cloudinary
 
 ### Development Tools
 
-* Nodemon
-* Git
-* GitHub
-* Postman
+- Nodemon
+- Git
+- GitHub
+- Postman
 
 ---
 
@@ -177,7 +177,7 @@ npm install
 
 Create a `.env` file in the project root and add:
 
-```env
+````env
 DATABASE_URI=
 
 ACCESS_TOKEN_SECRET=
@@ -198,7 +198,7 @@ Development Mode:
 
 ```bash
 npm run dev
-```
+````
 
 Production Mode:
 
@@ -218,12 +218,12 @@ docs/api-endpoints.md
 
 The documentation includes:
 
-* Authentication endpoints
-* Product endpoints
-* Order endpoints
-* Sales endpoints
-* Dashboard endpoints
-* Analytics endpoints
+- Authentication endpoints
+- Product endpoints
+- Order endpoints
+- Sales endpoints
+- Dashboard endpoints
+- Analytics endpoints
 
 ---
 
@@ -241,9 +241,9 @@ npm run seed
 
 The seeding script will delete all:
 
-* Products
-* Orders
-* Sales
+- Products
+- Orders
+- Sales
 
 before recreating them from the sample data files.
 
@@ -253,14 +253,14 @@ The script is protected from running in production environments.
 
 ## Security Features
 
-* Password hashing using bcrypt
-* JWT Access Tokens
-* JWT Refresh Tokens
-* Protected routes
-* Role-based access control
-* Secure cookie handling
-* Input validation
-* MongoDB schema validation
+- Password hashing using bcrypt
+- JWT Access Tokens
+- JWT Refresh Tokens
+- Protected routes
+- Role-based access control
+- Secure cookie handling
+- Input validation
+- MongoDB schema validation
 
 ---
 
@@ -270,17 +270,17 @@ The script is protected from running in production environments.
 
 Administrators have access to:
 
-* Products
-* Orders
-* Sales
-* Analytics
-* Dashboard
+- Products
+- Orders
+- Sales
+- Analytics
+- Dashboard
 
 ### Future Roles (Planned)
 
-* Staff Accounts
-* Inventory Personnel
-* Sales Personnel
+- Staff Accounts
+- Inventory Personnel
+- Sales Personnel
 
 ---
 
@@ -288,15 +288,15 @@ Administrators have access to:
 
 Planned Version 2 Features:
 
-* Customer Accounts
-* MPesa Integration
-* Online Checkout
-* Shopping Cart
-* Employee Accounts
-* Manufacturing Tracking
-* Raw Material Tracking
-* Role-Based Permissions Expansion
-* Customer Reviews
+- Customer Accounts
+- MPesa Integration
+- Online Checkout
+- Shopping Cart
+- Employee Accounts
+- Manufacturing Tracking
+- Raw Material Tracking
+- Role-Based Permissions Expansion
+- Customer Reviews
 
 ---
 

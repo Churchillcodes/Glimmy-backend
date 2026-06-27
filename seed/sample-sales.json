@@ -1,0 +1,110 @@
+[
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0711111111",
+    "customerLocation": "Nairobi",
+    "productName": "Luxury Shoe Rack",
+    "quantity": 1,
+    "listedPrice": 7000,
+    "agreedPrice": 7000,
+    "totalAmount": 7000,
+    "orderType": "Inventory Sale",
+    "saleDate": "2026-06-26T11:47:55.098Z"
+  },
+  {
+    "customerName": "John Kamau",
+    "customerPhone": "0766666666",
+    "customerLocation": "Machakos",
+    "productName": "Royal Baby Cot",
+    "quantity": 2,
+    "listedPrice": 25000,
+    "agreedPrice": 26000,
+    "totalAmount": 52000,
+    "orderType": "Custom Order",
+    "saleDate": "2026-06-26T11:45:02.416Z"
+  },
+  {
+    "customerName": "Sarah Njeri",
+    "customerPhone": "0755555555",
+    "customerLocation": "Thika",
+    "productName": "Toddler Wooden Bed",
+    "quantity": 1,
+    "listedPrice": 15000,
+    "agreedPrice": 16000,
+    "totalAmount": 16000,
+    "orderType": "Custom Order",
+    "saleDate": "2026-06-26T11:41:25.659Z"
+  },
+  {
+    "customerName": "Peter Otieno",
+    "customerPhone": "0744444444",
+    "customerLocation": "Nakuru",
+    "productName": "TV Stand",
+    "quantity": 2,
+    "listedPrice": 12000,
+    "agreedPrice": 11500,
+    "totalAmount": 23000,
+    "orderType": "Inventory Sale",
+    "saleDate": "2026-06-26T11:38:29.053Z"
+  },
+  {
+    "customerName": "Lucy Achieng",
+    "customerPhone": "0733333333",
+    "customerLocation": "Kisumu",
+    "productName": "Luxury Shoe Rack",
+    "quantity": 3,
+    "listedPrice": 7000,
+    "agreedPrice": 6500,
+    "totalAmount": 19500,
+    "orderType": "Inventory Sale",
+    "saleDate": "2026-06-26T11:36:51.019Z"
+  },
+  {
+    "customerName": "James Mwangi",
+    "customerPhone": "0722222222",
+    "customerLocation": "Kiambu",
+    "productName": "Luxury Baby Cot",
+    "quantity": 1,
+    "listedPrice": 25000,
+    "agreedPrice": 25000,
+    "totalAmount": 25000,
+    "orderType": "Inventory Sale",
+    "saleDate": "2026-06-26T11:35:13.033Z"
+  },
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0711111111",
+    "customerLocation": "Nairobi",
+    "productName": "Luxury Baby Cot",
+    "quantity": 2,
+    "listedPrice": 25000,
+    "agreedPrice": 24000,
+    "totalAmount": 48000,
+    "orderType": "Inventory Sale",
+    "saleDate": "2026-06-26T11:32:30.400Z"
+  },
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0798765432",
+    "customerLocation": "Kiambu",
+    "productName": "Royal Baby Cot",
+    "quantity": 1,
+    "listedPrice": 25000,
+    "agreedPrice": 22000,
+    "totalAmount": 22000,
+    "orderType": "Custom Order",
+    "saleDate": "2026-06-26T07:15:39.459Z"
+  },
+  {
+    "customerName": "John Kamau",
+    "customerPhone": "0712345678",
+    "customerLocation": "Nairobi",
+    "productName": "Luxury Shoe Rack",
+    "quantity": 2,
+    "listedPrice": 6000,
+    "agreedPrice": 4000,
+    "totalAmount": 8000,
+    "orderType": "Inventory Sale",
+    "saleDate": "2026-06-26T07:01:52.574Z"
+  }
+]
