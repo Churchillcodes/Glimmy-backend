@@ -12,6 +12,10 @@ const orderSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
+      match: [
+        /^(?:\+254|254|0)(7\d{8}|1\d{8})$/,
+        "Please provide a valid Kenyan phone number",
+      ],
     },
 
     customerLocation: {
@@ -22,6 +26,7 @@ const orderSchema = new mongoose.Schema(
     product: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Product",
+      required: true,
     },
 
     quantity: {
@@ -34,13 +39,13 @@ const orderSchema = new mongoose.Schema(
     listedPrice: {
       type: Number,
       required: true,
-      min: 0,
+      min: 1,
     },
 
     agreedPrice: {
       type: Number,
       required: true,
-      min: 0,
+      min: 1,
     },
 
     orderType: {

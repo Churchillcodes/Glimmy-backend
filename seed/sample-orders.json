@@ -1,0 +1,152 @@
+[
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0798765432",
+    "customerLocation": "Kiambu",
+    "productName": "Wooden Wardrobe",
+    "quantity": 1,
+    "listedPrice": 18000,
+    "agreedPrice": 20000,
+    "orderType": "Inventory Sale",
+    "status": "Cancelled"
+  },
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0711111111",
+    "customerLocation": "Nairobi",
+    "productName": "Luxury Shoe Rack",
+    "quantity": 1,
+    "listedPrice": 7000,
+    "agreedPrice": 7000,
+    "orderType": "Inventory Sale",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "John Kamau",
+    "customerPhone": "0766666666",
+    "customerLocation": "Machakos",
+    "productName": "Royal Baby Cot",
+    "quantity": 2,
+    "listedPrice": 25000,
+    "agreedPrice": 26000,
+    "orderType": "Custom Order",
+    "customRequirements": "White and gold finish",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "Sarah Njeri",
+    "customerPhone": "0755555555",
+    "customerLocation": "Thika",
+    "productName": "Toddler Wooden Bed",
+    "quantity": 1,
+    "listedPrice": 15000,
+    "agreedPrice": 16000,
+    "orderType": "Custom Order",
+    "customRequirements": "Pink finish with storage drawer",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "Peter Otieno",
+    "customerPhone": "0744444444",
+    "customerLocation": "Nakuru",
+    "productName": "TV Stand",
+    "quantity": 2,
+    "listedPrice": 12000,
+    "agreedPrice": 11500,
+    "orderType": "Inventory Sale",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "Lucy Achieng",
+    "customerPhone": "0733333333",
+    "customerLocation": "Kisumu",
+    "productName": "Luxury Shoe Rack",
+    "quantity": 3,
+    "listedPrice": 7000,
+    "agreedPrice": 6500,
+    "orderType": "Inventory Sale",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "James Mwangi",
+    "customerPhone": "0722222222",
+    "customerLocation": "Kiambu",
+    "productName": "Luxury Baby Cot",
+    "quantity": 1,
+    "listedPrice": 25000,
+    "agreedPrice": 25000,
+    "orderType": "Inventory Sale",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0711111111",
+    "customerLocation": "Nairobi",
+    "productName": "Luxury Baby Cot",
+    "quantity": 2,
+    "listedPrice": 25000,
+    "agreedPrice": 24000,
+    "orderType": "Inventory Sale",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0798765432",
+    "customerLocation": "Kiambu",
+    "productName": "Royal Baby Cot",
+    "quantity": 1,
+    "listedPrice": 25000,
+    "agreedPrice": 22000,
+    "orderType": "Custom Order",
+    "customRequirements": "White paint finish",
+    "status": "Delivered"
+  },
+  {
+    "customerName": "John Kamau",
+    "customerPhone": "0712345678",
+    "customerLocation": "Nairobi",
+    "productName": "Luxury Shoe Rack",
+    "quantity": 2,
+    "listedPrice": 6000,
+    "agreedPrice": 4000,
+    "orderType": "Inventory Sale",
+    "status": "Delivered",
+    "notes": "Customer wants pickup"
+  },
+  {
+    "customerName": "John Mwangi",
+    "customerPhone": "0798765432",
+    "customerLocation": "Kiambu",
+    "productName": "Luxury Baby Cot",
+    "quantity": 1,
+    "listedPrice": 25000,
+    "agreedPrice": 18000,
+    "orderType": "Inventory Sale",
+    "status": "Delivered",
+    "notes": "Pickup from workshop"
+  },
+  {
+    "customerName": "Mary Wanjiku",
+    "customerPhone": "0712345678",
+    "customerLocation": "Nairobi",
+    "productName": "Wooden Wardrobe",
+    "quantity": 2,
+    "listedPrice": 18000,
+    "agreedPrice": 22000,
+    "orderType": "Inventory Sale",
+    "status": "Delivered",
+    "notes": "Customer requested home delivery"
+  },
+  {
+    "customerName": "Churchill",
+    "customerPhone": "0712345678",
+    "customerLocation": "Nairobi",
+    "productName": "TV Stand",
+    "quantity": 2,
+    "listedPrice": 12000,
+    "agreedPrice": 11000,
+    "orderType": "Inventory Sale",
+    "status": "Cancelled",
+    "notes": "Deliver on Saturday"
+  }
+]

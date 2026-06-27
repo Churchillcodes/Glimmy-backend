@@ -7,6 +7,8 @@ const productSchema = new mongoose.Schema(
       required: [true, "Product name is required"],
       unique: true,
       trim: true,
+      minlength: 3,
+      maxlength: 100,
     },
 
     category: {
@@ -19,12 +21,14 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, "Description is required"],
       trim: true,
+      minlength: 10,
+      maxlength: 1000,
     },
 
     listedPrice: {
       type: Number,
       required: [true, "Listed price is required"],
-      min: 0,
+      min: 1,
     },
 
     negotiable: {
@@ -71,10 +75,12 @@ const productSchema = new mongoose.Schema(
       {
         url: {
           type: String,
+          required: true,
         },
 
         publicId: {
           type: String,
+          required: true,
         },
       },
     ],
