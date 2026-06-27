@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const upload = require("../middleware/upload");
 const {
   createProduct,
   getAllProducts,
@@ -11,6 +12,8 @@ const {
   restoreProduct,
   increaseStock,
   reduceStock,
+  uploadProductImages,
+  deleteProductImage,
 } = require("../controllers/productController");
 const verifyJWT = require("../middleware/verifyJWT");
 const verifyRoles = require("../middleware/verifyRoles");
@@ -40,6 +43,21 @@ router.patch(
   verifyJWT,
   verifyRoles(ROLES_LIST.Admin),
   updateProductById,
+);
+
+router.post(
+  "/:id/images",
+  verifyJWT,
+  verifyRoles(ROLES_LIST.Admin),
+  upload.array("images", 5),
+  uploadProductImages,
+);
+
+router.delete(
+  "/:id/images/:imageId",
+  verifyJWT,
+  verifyRoles(ROLES_LIST.Admin),
+  deleteProductImage,
 );
 
 router.patch(

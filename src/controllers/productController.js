@@ -1,4 +1,5 @@
 const Product = require("../models/Product");
+const cloudinary = require("../config/cloudinary");
 
 //create product
 const createProduct = async (req, res) => {
@@ -288,6 +289,96 @@ const restoreProduct = async (req, res) => {
   }
 };
 
+//Uploading product images
+const uploadProductImages = async (req, res) => {
+  try {
+    const product = await Product.findById(req.params.id);
+
+    if (!product) {
+      return res.status(404).json({
+        message: "Product not found",
+      });
+    }
+
+    if (!req.files || req.files.length === 0) {
+      return res.status(400).json({
+        message: "No images uploaded",
+      });
+    }
+
+    const uploadedImages = req.files.map((file) => ({
+      url: file.path,
+      publicId: file.filename,
+    }));
+
+    product.images.push(...uploadedImages);
+
+    await product.save();
+
+    res.status(200).json({
+      message: "Images uploaded successfully",
+      images: product.images,
+    });
+  } catch (err) {
+    res.status(500).json({
+      message: err.message,
+    });
+  }
+};
+
+// Delete product image
+const deleteProductImage = async (req, res) => {
+  try {
+    const { id, imageId } = req.params;
+
+    const product = await Product.findById(id);
+
+    if (!product) {
+      return res.status(404).json({
+        message: "Product not found",
+      });
+    }
+
+    if (product.images.length === 1) {
+      return res.status(400).json({
+        message:
+          "Cannot delete the last image. A product must have at least one image.",
+      });
+    }
+
+    const image = product.images.id(imageId);
+
+    if (!image) {
+      return res.status(404).json({
+        message: "Image not found",
+      });
+    }
+
+    // Delete from Cloudinary
+    await cloudinary.uploader.destroy(image.publicId);
+
+    // Remove from MongoDB array
+    image.deleteOne();
+
+    await product.save();
+
+    res.status(200).json({
+      message: "Image deleted successfully",
+      remainingImages: product.images,
+    });
+  } catch (err) {
+    if (err.name === "CastError") {
+      return res.status(400).json({
+        message: "Invalid ID format",
+      });
+    }
+
+    res.status(500).json({
+      message: err.message,
+    });
+  }
+};
+
 module.exports = {
   createProduct,
   getAllProducts,
@@ -299,4 +390,6 @@ module.exports = {
   restoreProduct,
   increaseStock,
   reduceStock,
+  uploadProductImages,
+  deleteProductImage,
 };
